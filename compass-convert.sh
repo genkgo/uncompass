@@ -4,7 +4,7 @@
 
 usage() { echo "usage: [project folder root]"; exit 1; }
 
-FOLDER="app/assets/scss/"
+FOLDER="."
 DEST=$1$FOLDER
 
 sed -i '' 's|@include background-size(\(.*\))|background-size: \1|g' $(find ${DEST} -name '*.scss')
